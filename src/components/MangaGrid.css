@@ -1,0 +1,50 @@
+.manga-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+  min-height: 100vh;
+}
+
+.panel {
+  border: 4px solid var(--ink);
+  background: var(--white);
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.hero-panel { grid-column: 1 / -1; min-height: 400px; }
+.about-panel { grid-column: span 1; }
+.skills-panel { grid-column: span 2; }
+.project1-panel { grid-column: span 1; }
+.project2-panel { grid-column: span 1; }
+.project3-panel { grid-column: span 1; }
+.contact-panel { grid-column: 1 / -1; }
+
+.manga-grid {
+  background: var(--ink);  /* ink black gutters between panels */
+}
+
+.hero-panel {
+  background: var(--ink);
+  color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.03) 40px,
+    rgba(255,255,255,0.03) 41px
+  );
+}

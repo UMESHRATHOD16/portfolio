@@ -1,3 +1,5 @@
+import './MangaGrid.css'
+
 function MangaGrid() {
   return (
     <div className="manga-grid">
