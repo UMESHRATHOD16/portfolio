@@ -1,9 +1,7 @@
-import React from 'react'
+import MangaGrid from '../components/MangaGrid'
 
 function MainPage() {
-  return (
-    <div>MainPage</div>
-  )
+  return <MangaGrid />
 }
 
 export default MainPage
