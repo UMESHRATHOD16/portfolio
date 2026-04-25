@@ -1,18 +1,18 @@
 import { Routes, Route } from 'react-router-dom'
 import MainPage from './pages/MainPage'
-import AboutChapter from './pages/AboutChapter'
-import SkillsChapter from './pages/SkillsChapter'
-import ProjectsChapter from './pages/ProjectsChapter'
-import ContactChapter from './pages/ContactChapter'
+import About from './pages/About'
+import Skills from './pages/Skills'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/about" element={<AboutChapter />} />
-      <Route path="/skills" element={<SkillsChapter />} />
-      <Route path="/projects" element={<ProjectsChapter />} />
-      <Route path="/contact" element={<ContactChapter />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact/>} />
     </Routes>
   )
 }
