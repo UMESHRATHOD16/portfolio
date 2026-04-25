@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+JP:wght@400;700;900&family=Special+Elite&display=swap');
+
+:root {
+  /* Colors */
+  --ink: #0a0a0a;
+  --paper: #f5f0e8;
+  --white: #ffffff;
+  --red: #cc0000;
+  --grey-light: #e0d9ce;
+  --grey-mid: #999;
+
+  /* Panel */
+  --border: 3px solid var(--ink);
+  --border-thick: 5px solid var(--ink);
+  --gutter: 12px;
+
+  /* Typography */
+  --font-impact: 'Bangers', cursive;        /* big dramatic text */
+  --font-body: 'Special Elite', cursive;    /* manga dialogue feel */
+  --font-jp: 'Noto Sans JP', sans-serif;    /* chapter labels */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Manga grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
