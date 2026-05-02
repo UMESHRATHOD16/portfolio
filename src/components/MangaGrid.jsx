@@ -26,10 +26,46 @@ function MangaGrid() {
       </div>
 
       {/* Skills */}
-        <div className="panel skills-panel">
-          <span className="panel-label">第03話 · SKILLS</span>
-          <p>Origin Story</p>
+      <div className="panel skills-panel">
+        <span className="panel-label">第03話 · SKILLS</span>
+        
+        <div className="skills-content">
+          
+          <div className="skill-group">
+            <span className="skill-arc">⚔ Current Arc</span>
+            <div className="skill-tags">
+              <span className="tag tag-lg">React</span>
+              <span className="tag tag-lg">JavaScript</span>
+              <span className="tag tag-md">Redux Toolkit</span>
+              <span className="tag tag-md">Tailwind CSS</span>
+              <span className="tag tag-sm">HTML · CSS</span>
+            </div>
+          </div>
+
+          <div className="skill-divider">— unlocking —</div>
+
+          <div className="skill-group">
+            <span className="skill-arc">🔓 Next Arc</span>
+            <div className="skill-tags">
+              <span className="tag tag-lg unlocking">Node.js</span>
+              <span className="tag tag-md unlocking">Express</span>
+              <span className="tag tag-md unlocking">MongoDB</span>
+            </div>
+          </div>
+
+          <div className="skill-divider">— always training —</div>
+
+          <div className="skill-group">
+            <span className="skill-arc">🏋 Always Training</span>
+            <div className="skill-tags">
+              <span className="tag tag-md">C++</span>
+              <span className="tag tag-md">DSA</span>
+              <span className="tag tag-sm">Git</span>
+            </div>
+          </div>
+
         </div>
+      </div>
 
       {/* Projects Header */}
       <div className="panel projects-header-panel">
