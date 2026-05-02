@@ -9,12 +9,51 @@ function MangaGrid() {
         <p className="hero-sub">IT Student · NIT Jalandhar · Web Developer</p>
         </div>
     </div>
-      <div className="panel about-panel">ABOUT</div>
-      <div className="panel skills-panel">SKILLS</div>
-      <div className="panel project1-panel">P1</div>
-      <div className="panel project2-panel">P2</div>
-      <div className="panel project3-panel">P3</div>
-      <div className="panel contact-panel">CONTACT</div>
+
+      {/* about */}
+      <div className="panel about-panel"><div className="panel about-panel">
+        <span className="panel-label">第02話 · ABOUT</span>
+        <p>Origin Story</p>
+        </div>
+      </div>
+
+      {/* Skills */}
+        <div className="panel skills-panel">
+          <div className="panel about-panel">
+          <span className="panel-label">第03話 · SKILLS</span>
+          <p>Origin Story</p>
+          </div>
+        </div>
+
+
+      {/* Project1 */}
+        <div className="panel project1-panel">
+          <div className="panel about-panel">
+          <span className="panel-label">第04話 · WHAT IV'E BUILT</span>
+          <p>Origin Story</p>
+          </div>
+        </div>
+
+
+      {/* Project2 */}
+        <div className="panel project2-panel">
+          P2
+        </div>
+
+
+      {/* Project3 */}
+        <div className="panel project3-panel">
+          P3
+        </div>
+
+        
+      {/* Contact */}
+        <div className="panel contact-panel">
+          <div className="panel about-panel">
+          <span className="panel-label">第05話 · LET'S CONNECT</span>
+          <p>Origin Story</p>
+          </div>
+        </div>
     </div>
   )
 }

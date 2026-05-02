@@ -73,3 +73,12 @@
   margin-top: 1rem;
   z-index: 1;
 }
+
+.panel-label {
+  font-family: var(--font-jp);
+  font-size: 0.75rem;
+  color: var(--red);
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
