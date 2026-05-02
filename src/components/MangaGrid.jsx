@@ -1,11 +1,40 @@
 import './MangaGrid.css'
+import { useEffect } from 'react'
 
 function MangaGrid() {
+
+useEffect(() => {
+  const text = "UMESH\nRATHOD"
+  const el = document.getElementById('heroName')
+  let i = 0
+  el.innerHTML = ''
+  let started = false
+
+  if (started) return
+  started = true
+
+  const type = () => {
+    if (i < text.length) {
+      if (text[i] === '\n') {
+        el.innerHTML += '<br/>'
+      } else {
+        el.innerHTML += `<span class="typed-char">${text[i]}</span>`
+      }
+      i++
+      setTimeout(type, 100)
+    }
+  }
+
+  setTimeout(type, 400)
+  
+  return () => { i = text.length } // cleanup
+}, [])
+
   return (
     <div className="manga-grid">
         <div className="panel hero-panel">
         <span className="hero-chapter">第01話</span>
-        <h1 className="hero-name">UMESH<br/>RATHOD</h1>
+        <h1 className="hero-name"id="heroName" >UMESH<br/>RATHOD</h1>
         <p className="hero-sub">IT Student · NIT Jalandhar · Web Developer</p>
     </div>
 
