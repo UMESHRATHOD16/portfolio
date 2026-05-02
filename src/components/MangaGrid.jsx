@@ -74,15 +74,36 @@ function MangaGrid() {
       </div>
 
       {/* Project1 */}
-        <div className="panel project1-panel">
-          <p>Mega Blog</p>
+      <div className="panel project1-panel">
+        <span className="panel-label">PROJECT 01</span>
+        <h3 className="project-title">Mega Blog</h3>
+        <p className="project-desc">Production-grade blogging platform. Write, publish, own your words.</p>
+        <div className="project-stack">
+          <span className="tag tag-sm">React</span>
+          <span className="tag tag-sm">Appwrite</span>
+          <span className="tag tag-sm">Redux</span>
         </div>
+        <div className="project-links">
+          <a href="https://github.com/UMESHRATHOD16/MegaBlogApp" target="_blank" className="project-link">↗ GitHub</a>
+        </div>
+      </div>
 
 
       {/* Project2 */}
-        <div className="panel project2-panel">
-          <p>EcoSangam</p>
+      <div className="panel project2-panel">
+        <span className="panel-label">PROJECT 02</span>
+        <h3 className="project-title">EcoSangam</h3>
+        <p className="project-desc">AI-driven sustainability platform. Track carbon footprint with Gemini-powered insights.</p>
+        <div className="project-stack">
+          <span className="tag tag-sm">React</span>
+          <span className="tag tag-sm">Node.js</span>
+          <span className="tag tag-sm">MongoDB</span>
+          <span className="tag tag-sm">Gemini API</span>
         </div>
+        <div className="project-links">
+          <a href="https://github.com/UMESHRATHOD16/ecoSangam" target="_blank" className="project-link">↗ GitHub</a>
+        </div>
+      </div>
 
 
       {/* Contact */}
