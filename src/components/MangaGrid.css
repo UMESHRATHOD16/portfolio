@@ -22,7 +22,7 @@
 .contact-panel { grid-column: 1 / -1; }
 
 .manga-grid {
-  background: var(--ink);  /* ink black gutters between panels */
+  background: var(--ink);
 }
 
 .hero-panel {
@@ -227,4 +227,45 @@
 .hero-panel:hover {
   transform: translate(-3px, -3px);
   box-shadow: 6px 6px 0px var(--red);
+}
+
+.project-title {
+  font-family: var(--font-impact);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin: 0.4rem 0;
+  line-height: 1;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  margin-top: auto;
+}
+
+.project-link {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 2px;
+  transition: color 0.2s;
+  letter-spacing: 0.08em;
+}
+
+.project-link:hover {
+  color: var(--red);
 }
