@@ -213,3 +213,18 @@
   border-top: 1px dashed var(--grey-light);
   padding-top: 0.6rem;
 }
+
+.panel {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.panel:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px var(--ink);
+}
+
+.hero-panel:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px var(--red);
+}
