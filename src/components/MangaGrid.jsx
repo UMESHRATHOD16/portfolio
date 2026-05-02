@@ -45,7 +45,7 @@ function MangaGrid() {
           <div className="skill-divider">— unlocking —</div>
 
           <div className="skill-group">
-            <span className="skill-arc">🔓 Next Arc</span>
+            <span className="skill-arc">Next Arc</span>
             <div className="skill-tags">
               <span className="tag tag-lg unlocking">Node.js</span>
               <span className="tag tag-md unlocking">Express</span>
@@ -56,7 +56,7 @@ function MangaGrid() {
           <div className="skill-divider">— always training —</div>
 
           <div className="skill-group">
-            <span className="skill-arc">🏋 Always Training</span>
+            <span className="skill-arc">Always Training</span>
             <div className="skill-tags">
               <span className="tag tag-md">C++</span>
               <span className="tag tag-md">DSA</span>
