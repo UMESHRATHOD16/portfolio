@@ -148,3 +148,68 @@
   color: var(--ink);
   line-height: 1.1;
 }
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 0.75rem;
+  height: 100%;
+}
+
+.skill-arc {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.6rem;
+  font-family: var(--font-jp);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.tag { 
+  font-family: var(--font-body);
+  padding: 0.3rem 0.75rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  letter-spacing: 0.05em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tag:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.tag-lg { font-size: 1.3rem; padding: 0.5rem 1.2rem; border-width: 3px; }
+.tag-md { font-size: 1rem; padding: 0.4rem 1rem; }
+.tag-sm { font-size: 0.78rem; padding: 0.3rem 0.75rem; }
+
+.tag.unlocking {
+  border-style: dashed;
+  color: var(--red);
+  border-color: var(--red);
+  background: transparent;
+}
+
+.tag.unlocking:hover {
+  background: var(--red);
+  color: var(--paper);
+}
+
+.skill-divider {
+  font-size: 0.7rem;
+  color: var(--grey-mid);
+  letter-spacing: 0.2em;
+  text-align: center;
+  border-top: 1px dashed var(--grey-light);
+  padding-top: 0.6rem;
+}
