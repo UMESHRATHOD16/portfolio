@@ -352,3 +352,42 @@
   font-size: 0.75rem;
   color: var(--red);
 }
+
+
+/* Hover name effect */
+.panel:hover .project-title::after,
+.panel:hover .about-accent::after {
+  animation: glossSweep 2.0s ease-in-out infinite;
+}
+
+.project-title,
+.about-accent {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+@keyframes glossSweep {
+  0%   { left: -100%; }
+  60%  { left: 200%; }
+  100% { left: 200%; }
+}
+
+/* stop hover effect */
+.project-title::after,
+.about-accent::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(136, 16, 16, 0.5) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: none;
+}
