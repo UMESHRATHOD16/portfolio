@@ -31,7 +31,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="manga-grid">
+     <div className="manga-grid">
         <div className="panel hero-panel">
         <span className="hero-chapter">第01話</span>
         <h1 className="hero-name"id="heroName" >UMESH<br/>RATHOD</h1>
@@ -178,11 +178,11 @@ useEffect(() => {
         <span className="contact-arrow">↗</span>
       </a>
 
-      <a href="https://t.me/umesh_rathxd" target="_blank" className="contact-card">
+      <a href="https://hashnode.com/@umeshhhhh" target="_blank" className="contact-card">
         <span className="contact-icon">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          <svg viewBox="0 0 337 337" fill="currentColor"><path d="M168.5 0C75.36 0 0 75.36 0 168.5S75.36 337 168.5 337 337 261.64 337 168.5 261.64 0 168.5 0zm-9.46 246.53c-43.46 4.05-80.07-32.56-76.02-76.02 3.47-37.23 33.89-67.65 71.12-71.12 43.46-4.05 80.07 32.56 76.02 76.02-3.47 37.23-33.89 67.65-71.12 71.12z"/></svg>
         </span>
-        <span className="contact-name">Telegram</span>
+        <span className="contact-name">Hashnode</span>
         <span className="contact-arrow">↗</span>
       </a>
     </div>
