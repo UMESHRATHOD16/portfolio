@@ -1,5 +1,6 @@
 import './MangaGrid.css'
 import { useEffect } from 'react'
+import { Eye, Heart, Timer } from 'lucide-react'
 
 function MangaGrid() {
 
@@ -26,8 +27,25 @@ useEffect(() => {
   }
 
   setTimeout(type, 400)
-  
-  return () => { i = text.length }
+
+  fetch('https://countapi.xyz/hit/umeshrathod-portfolio/visits')
+    .then(res => res.json())
+    .then(data => {
+      const el = document.getElementById('visitorCount')
+      if (el) el.textContent = data.value
+    })
+
+  let seconds = 0
+  const timer = setInterval(() => {
+    seconds++
+    const el = document.getElementById('timeSpent')
+    if (el) el.textContent = seconds
+  }, 1000)
+
+  return () => {
+    clearInterval(timer)
+    i = text.length
+  }
 }, [])
 
   return (
@@ -189,7 +207,28 @@ useEffect(() => {
   </div>
 </div>
 
-        
+    
+    <footer className="manga-footer">
+      <div className="footer-left">
+        <span className="footer-visitors">
+          <Eye size={14} strokeWidth={1.5} /> 
+          <span id="visitorCount">...</span> viewers so far
+        </span>
+        <span className="footer-time">
+          <Timer size={14} strokeWidth={1.5} />
+          You've been here <span id="timeSpent">0</span>s
+        </span>
+      </div>
+      <div className="footer-center">
+        Made with <Heart size={11} strokeWidth={2.5} className="heart-icon" /> by <strong>Umesh Rathod</strong>
+      </div>
+      <div className="footer-right">
+        <span className="footer-sig">第END話</span>
+      </div>
+    </footer>
+
+
+
     </div>
   )
 }
