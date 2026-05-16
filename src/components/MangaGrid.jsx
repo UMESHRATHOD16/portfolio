@@ -152,10 +152,41 @@ useEffect(() => {
         </div>
       </div>
 
+    {/* BLOGS HEADER */}
+    <div className="panel blogs-header-panel" id="blogs">
+      <span className="panel-label">第05話</span>
+      <h2 className="panel-title">Stuff I Needed to<br/>Understand</h2>
+    </div>
+
+    {/* BLOG CARD */}
+    <div className="panel blog1-panel" data-num="01">
+      <span className="panel-label">LATEST ENTRY</span>
+      <div className="blog-meta">
+        <span className="blog-date">May 3, 2026</span>
+        <span className="blog-read">2 min read</span>
+      </div>
+      <h3 className="blog-title">I Broke C++ Memory On Purpose — Here's What Happened</h3>
+      <p className="blog-desc">A deep dive into what happens when you intentionally corrupt memory in C++. Spoiler: it gets weird.</p>
+      <a href="https://umeshblog1.hashnode.dev/i-broke-c-memory-on-purpose-here-s-what-happened" target="_blank" className="blog-link">
+        Read Entry ↗
+      </a>
+    </div>
+
+    {/* MORE COMING */}
+    <div className="panel blog2-panel" data-num="??">
+      <span className="panel-label">NEXT ENTRY</span>
+      <div className="blog-coming">
+        <p className="coming-text">Currently figuring out<br/>something new.</p>
+        <p className="coming-sub">Check back soon.</p>
+        <a href="https://hashnode.com/@umeshhhhh" target="_blank" className="blog-link">
+          Follow on Hashnode ↗
+        </a>
+      </div>
+    </div>
 
       {/* Contact */}
 <div className="panel contact-panel">
-  <span className="panel-label">第05話 · LET'S CONNECT</span>
+  <span className="panel-label">第06話 · LET'S CONNECT</span>
   <div className="contact-content">
 
     <div className="contact-top">
