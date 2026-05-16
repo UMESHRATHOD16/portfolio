@@ -429,33 +429,119 @@
   letter-spacing: 0.2em;
 }
 
-.footer-visitors,
-.footer-time {
+.blogs-header-panel {
+  grid-column: 1 / -1;
+  min-height: 100px;
+  border-bottom: none;
+}
+
+.blog1-panel {
+  grid-column: span 2;
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.heart-icon {
-  color: var(--red);
-  display: inline-block;
-  vertical-align: middle;
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-}
-
-.manga-footer {
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
+  gap: 0.8rem;
 }
 
-.footer-left {
-  flex-direction: row;
-  gap: 2rem;
+.blog2-panel {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--paper);
+  border-style: dashed;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.blog-date {
+  font-family: var(--font-jp);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--grey-mid);
+}
+
+.blog-read {
+  font-size: 0.7rem;
+  color: var(--red);
+  letter-spacing: 0.1em;
+  border: 1px solid var(--red);
+  padding: 0.1rem 0.5rem;
+}
+
+.blog-title {
+  font-family: var(--font-impact);
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.blog-title::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.5) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: none;
+}
+
+.panel:hover .blog-title::after {
+  animation: glossSweep 1.5s ease-in-out infinite;
+}
+
+.blog-desc {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.blog-link {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 2px;
+  align-self: flex-start;
+  transition: color 0.2s;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+}
+
+.blog-link:hover { color: var(--red); }
+
+.blog-coming {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 0;
+}
+
+.coming-text {
+  font-family: var(--font-impact);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--grey-mid);
+}
+
+.coming-sub {
+  font-size: 0.78rem;
+  color: var(--grey-mid);
+  font-style: italic;
 }
