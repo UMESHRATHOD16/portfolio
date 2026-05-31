@@ -58,7 +58,7 @@ useEffect(() => {
   return (
     <>
      <div className="manga-grid">
-        <div className="panel hero-panel">
+        <div className="hero-panel">
         <span className="hero-chapter">第01話</span>
         <h1 className="hero-name"id="heroName" >UMESH<br/>RATHOD</h1>
         <p className="hero-sub">IT Student · NIT Jalandhar · Web Developer</p>
@@ -66,6 +66,7 @@ useEffect(() => {
 
       {/* about */}
       <div className="panel about-panel" data-num="02" id="about" onClick={() => handlePanelClick('/about')}  style={{ cursor: 'pointer' }}>
+        <span className="panel-hint">Open Chapter ↗</span>
         <span className="panel-label">第02話 · ABOUT</span>
         <div className="about-content">
           <p className="about-intro">Rathod Umesh. 21</p>
@@ -83,7 +84,7 @@ useEffect(() => {
       {/* Skills */}
       <div className="panel skills-panel" data-num="03" id="skills" onClick={() => handlePanelClick('/skills')}  style={{ cursor: 'pointer' }}>
         <span className="panel-label">第03話 · SKILLS</span>
-        
+        <span className="panel-hint">Open Chapter ↗</span>
         <div className="skills-content">
           
           <div className="skill-group">
@@ -131,6 +132,7 @@ useEffect(() => {
       {/* Project1 */}
       <div className="panel project1-panel" data-num="01" id="about" onClick={() => handlePanelClick('/projects/megablog')}  style={{ cursor: 'pointer' }}>
         <span className="panel-label">PROJECT 01</span>
+        <span className="panel-hint">Open Chapter ↗</span>
         <h3 className="project-title">Mega Blog</h3>
         <p className="project-desc">Production-grade blogging platform. Write, publish, own your words.</p>
         <div className="project-stack">
@@ -147,6 +149,7 @@ useEffect(() => {
       {/* Project2 */}
       <div className="panel project2-panel" data-num="02" id="about" onClick={() => handlePanelClick('/projects/ecosangam')}  style={{ cursor: 'pointer' }} >
         <span className="panel-label">PROJECT 02</span>
+        <span className="panel-hint">Open Chapter ↗</span>
         <h3 className="project-title">EcoSangam</h3>
         <p className="project-desc">AI-driven sustainability platform. Track carbon footprint with Gemini-powered insights.</p>
         <div className="project-stack">
@@ -169,11 +172,12 @@ useEffect(() => {
     {/* BLOG CARD */}
     <div className="panel blog1-panel" data-num="01" onClick={() => handlePanelClick('/blogs/cpp-memory')} style={{ cursor: 'pointer' }}>
       <span className="panel-label">LATEST ENTRY</span>
+      <span className="panel-hint">More ➺</span>
       <div className="blog-meta">
         <span className="blog-date">May 3, 2026</span>
         <span className="blog-read">2 min read</span>
       </div>
-      <h3 className="blog-title">I Broke C++ Memory On Purpose — Here's What Happened</h3>
+      <h3 className="blog-title">I Broke C++ Memory On Purpose, Here's What Happened</h3>
       <p className="blog-desc">A deep dive into what happens when you intentionally corrupt memory in C++. Spoiler: it gets weird.</p>
       <a href="https://umeshblog1.hashnode.dev/i-broke-c-memory-on-purpose-here-s-what-happened" target="_blank" className="blog-link">
         Read Entry ↗

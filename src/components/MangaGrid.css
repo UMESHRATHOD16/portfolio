@@ -545,3 +545,39 @@
   color: var(--grey-mid);
   font-style: italic;
 }
+
+/* OPTION B — bottom hint text */
+.panel-hint {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-family: var(--font-jp);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--grey-mid);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.3s ease;
+}
+
+.panel:hover .panel-hint {
+  opacity: 1;
+  color: var(--red);
+  transform: translateY(0);
+}
+
+/* OPTION C — animated border on hover */
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--red);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.panel:hover::before {
+  opacity: 1;
+}
