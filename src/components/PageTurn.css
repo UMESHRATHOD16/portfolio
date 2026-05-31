@@ -1,55 +1,40 @@
 .page-turn-overlay {
   position: fixed;
   inset: 0;
-  z-index: 9998;
-  pointer-events: none;
+  z-index: 9999;
+
+  background: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  animation: mangaChapter 0.8s ease forwards;
 }
 
-/* LEFT PANEL — slides in from left */
-.page-turn-left {
-  position: absolute;
-  top: 0; left: 0;
-  width: 50%;
-  height: 100%;
-  background: var(--ink);
-  transform: translateX(-100%);
-  animation: slideInLeft 0.4s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+.chapter-number {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: .15em;
 }
 
-/* RIGHT PANEL — slides in from right */
-.page-turn-right {
-  position: absolute;
-  top: 0; right: 0;
-  width: 50%;
-  height: 100%;
-  background: var(--ink);
-  transform: translateX(100%);
-  animation: slideInRight 0.4s cubic-bezier(0.76, 0, 0.24, 1) 0s forwards;
+.chapter-title {
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  letter-spacing: .3em;
 }
 
-/* FLASH — red slash across screen */
-.page-turn-flash {
-  position: absolute;
-  inset: 0;
-  background: var(--red);
-  opacity: 0;
-  animation: flashSlash 0.9s ease 0.35s forwards;
-  clip-path: polygon(40% 0%, 60% 0%, 60% 100%, 40% 100%);
-}
+@keyframes mangaChapter {
+  from {
+    opacity: 0;
+    transform: scale(1.15);
+  }
 
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(0); }
-}
-
-@keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
-}
-
-@keyframes flashSlash {
-  0%   { opacity: 0; clip-path: polygon(40% 0%, 60% 0%, 60% 100%, 40% 100%); }
-  30%  { opacity: 1; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
-  70%  { opacity: 1; }
-  100% { opacity: 0; }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

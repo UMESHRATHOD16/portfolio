@@ -2,22 +2,28 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './PageTurn.css'
 
-function PageTurn({ to, onComplete }) {
+function PageTurn({ to, chapter, title }) {
   const navigate = useNavigate()
 
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate(to)
-      if (onComplete) onComplete()
-    }, 900)
+    }, 800)
+
     return () => clearTimeout(timer)
-  }, [])
+  }, [navigate, to])
 
   return (
     <div className="page-turn-overlay">
-      <div className="page-turn-left" />
-      <div className="page-turn-right" />
-      <div className="page-turn-flash" />
+
+      <div className="chapter-number">
+        {chapter}
+      </div>
+
+      <div className="chapter-title">
+        {title}
+      </div>
+
     </div>
   )
 }
