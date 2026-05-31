@@ -7,7 +7,13 @@ function About() {
 
   return (
     <>
-      {goBack && <PageTurn to="/" />}
+      {goBack && (
+        <PageTurn 
+          to="/"
+          chapter="第00話"
+          title="MAIN PAGE"
+        />
+      )}
       <div className="about-page">
 
         <button className="back-btn" onClick={() => setGoBack(true)}>← BACK</button>
