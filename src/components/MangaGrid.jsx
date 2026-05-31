@@ -7,8 +7,12 @@ function MangaGrid() {
 
   const [navigateTo, setNavigateTo] = useState(null)
 
-  const handlePanelClick = (path) => {
-    setNavigateTo(path)
+  const handlePanelClick = (path, chapter, title) => {
+    setNavigateTo({
+      path,
+      chapter,
+      title
+    })
   }
   
 useEffect(() => {
@@ -65,7 +69,13 @@ useEffect(() => {
     </div>
 
       {/* about */}
-      <div className="panel about-panel" data-num="02" id="about" onClick={() => handlePanelClick('/about')}  style={{ cursor: 'pointer' }}>
+      <div className="panel about-panel" data-num="02" id="about" onClick={() =>
+          handlePanelClick(
+            '/about',
+            '第02話',
+            'ABOUT'
+          )
+        }  style={{ cursor: 'pointer' }}>
         <span className="panel-hint">Open Chapter ↗</span>
         <span className="panel-label">第02話 · ABOUT</span>
         <div className="about-content">
@@ -82,7 +92,13 @@ useEffect(() => {
       </div>
 
       {/* Skills */}
-      <div className="panel skills-panel" data-num="03" id="skills" onClick={() => handlePanelClick('/skills')}  style={{ cursor: 'pointer' }}>
+      <div className="panel skills-panel" data-num="03" id="skills" onClick={() =>
+          handlePanelClick(
+            '/skills',
+            '第03話',
+            'SKILLS'
+          )
+        }  style={{ cursor: 'pointer' }}>
         <span className="panel-label">第03話 · SKILLS</span>
         <span className="panel-hint">Open Chapter ↗</span>
         <div className="skills-content">
@@ -130,7 +146,13 @@ useEffect(() => {
       </div>
 
       {/* Project1 */}
-      <div className="panel project1-panel" data-num="01" id="about" onClick={() => handlePanelClick('/projects/megablog')}  style={{ cursor: 'pointer' }}>
+      <div className="panel project1-panel" data-num="01" id="about" onClick={() =>
+          handlePanelClick(
+            '/projects/megablog',
+            'PROJECT 01',
+            'MEGA BLOG'
+          )
+        }  style={{ cursor: 'pointer' }}>
         <span className="panel-label">PROJECT 01</span>
         <span className="panel-hint">Open Chapter ↗</span>
         <h3 className="project-title">Mega Blog</h3>
@@ -147,7 +169,13 @@ useEffect(() => {
 
 
       {/* Project2 */}
-      <div className="panel project2-panel" data-num="02" id="about" onClick={() => handlePanelClick('/projects/ecosangam')}  style={{ cursor: 'pointer' }} >
+      <div className="panel project2-panel" data-num="02" id="about" onClick={() =>
+            handlePanelClick(
+              '/projects/ecosangam',
+              'PROJECT 02',
+              'ECOSANGAM'
+            )
+          }  style={{ cursor: 'pointer' }} >
         <span className="panel-label">PROJECT 02</span>
         <span className="panel-hint">Open Chapter ↗</span>
         <h3 className="project-title">EcoSangam</h3>
@@ -170,7 +198,13 @@ useEffect(() => {
     </div>
 
     {/* BLOG CARD */}
-    <div className="panel blog1-panel" data-num="01" onClick={() => handlePanelClick('/blogs/cpp-memory')} style={{ cursor: 'pointer' }}>
+    <div className="panel blog1-panel" data-num="01" onClick={() =>
+        handlePanelClick(
+          '/blogs/cpp-memory',
+          '第05話',
+          'BLOG ENTRY'
+        )
+      } style={{ cursor: 'pointer' }}>
       <span className="panel-label">LATEST ENTRY</span>
       <span className="panel-hint">More ➺</span>
       <div className="blog-meta">
@@ -271,7 +305,13 @@ useEffect(() => {
     </footer>
     </div>
 
-    {navigateTo && <PageTurn to={navigateTo} />}
+    {navigateTo && (
+        <PageTurn
+          to={navigateTo.path}
+          chapter={navigateTo.chapter}
+          title={navigateTo.title}
+        />
+      )}
 
     </>
   )
