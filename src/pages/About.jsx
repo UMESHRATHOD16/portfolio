@@ -49,6 +49,18 @@ function About() {
 
         </div>
 
+        <div className="resume-section">
+          <span className="resume-label">// RESUME</span>
+          <p className="resume-text">Want the full picture? Here's my resume.</p>
+          <a 
+            href="https://drive.google.com/file/d/1gE0N8QBSGXH5E4K1_W3qsfZpp0zU499U/view?usp=sharing" 
+            target="_blank" 
+            className="resume-cta"
+          >
+            View Resume ↗
+          </a>
+        </div>
+
         <div className="about-end">— 第02話 · END —</div>
 
       </div>
