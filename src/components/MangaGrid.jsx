@@ -192,10 +192,10 @@ useEffect(() => {
       </div>
 
     {/* BLOGS HEADER */}
-    <div className="panel blogs-header-panel" id="blogs">
-      <span className="panel-label">第05話</span>
-      <h2 className="panel-title">Stuff I Needed to<br/>Understand</h2>
-    </div>
+      <div className="panel projects-header-panel">
+        <span className="panel-label"></span>
+        <h2 className=" panel-label panel-title">第05話 · Stuff I Needed To Understand</h2>
+      </div>
 
     {/* BLOG CARD */}
     <div className="panel blog1-panel" data-num="01" onClick={() =>

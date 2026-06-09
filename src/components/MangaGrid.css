@@ -429,11 +429,6 @@
   letter-spacing: 0.2em;
 }
 
-.blogs-header-panel {
-  grid-column: 1 / -1;
-  min-height: 100px;
-  border-bottom: none;
-}
 
 .blog1-panel {
   grid-column: span 2;
