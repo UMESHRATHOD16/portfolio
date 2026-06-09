@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import PageTurn from '../../components/PageTurn'
 import './Project.css'
+import Navbar from "../../components/Navbar"
 
 function MegaBlog() {
   const [goBack, setGoBack] = useState(false)
 
   return (
     <>
+      <Navbar/>
       {goBack && (
         <PageTurn to="/" chapter="第00話" title="MAIN PAGE" />
       )}

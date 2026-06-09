@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import PageTurn from '../components/PageTurn'
 import './About.css'
+import Navbar from '../components/Navbar'
 
 function About() {
   const [goBack, setGoBack] = useState(false)
 
   return (
     <>
+      <Navbar/>
       {goBack && (
         <PageTurn 
           to="/"
