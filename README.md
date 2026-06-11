@@ -31,7 +31,7 @@ heavy ink blacks, dramatic typography, and intentional negative space.
 - Responsive footer with beating heart icon
 
 ## Project Structure
-
+```
 src/
 ├── app/
 │   └── store.js
@@ -61,6 +61,7 @@ src/
 │       ├── CppBlog.jsx
 │       └── Blog.css
 └── index.css
+```
 
 ## Run Locally
 ```bash
