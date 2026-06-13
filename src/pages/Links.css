@@ -137,3 +137,30 @@
   letter-spacing: 0.3em;
   color: var(--grey-mid);
 }
+
+.links-avatar {
+  animation: contentReveal 0.4s ease 0s both;
+}
+
+.links-name {
+  animation: contentReveal 0.5s ease 0.1s both;
+}
+
+.links-bio {
+  animation: contentReveal 0.5s ease 0.2s both;
+}
+
+.links-body {
+  animation: contentReveal 0.6s ease 0.3s both;
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
