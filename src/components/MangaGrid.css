@@ -576,3 +576,31 @@
 .panel:hover::before {
   opacity: 1;
 }
+
+.panel {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: panelEntrance 0.5s ease forwards;
+}
+
+.hero-panel    { animation-delay: 0.1s; }
+.about-panel   { animation-delay: 0.2s; }
+.skills-panel  { animation-delay: 0.3s; }
+.projects-header-panel { animation-delay: 0.4s; }
+.project1-panel { animation-delay: 0.5s; }
+.project2-panel { animation-delay: 0.6s; }
+.blogs-header-panel { animation-delay: 0.7s; }
+.blog1-panel   { animation-delay: 0.8s; }
+.blog2-panel   { animation-delay: 0.9s; }
+.contact-panel { animation-delay: 1s; }
+
+@keyframes panelEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
