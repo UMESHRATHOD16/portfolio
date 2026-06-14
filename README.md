@@ -4,7 +4,7 @@ A manga-panel inspired developer portfolio built with React.
 Designed to feel like reading a manga — not browsing a website.
 
 ## Live Site
-```umeshrathod.vercel.app```
+umeshrathod.vercel.app
 
 ## Concept
 Instead of the usual hero + scroll layout, this portfolio is structured
