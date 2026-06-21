@@ -604,3 +604,64 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .contact-card {
+    padding: 0.8rem 0.3rem;
+  }
+
+  .contact-name {
+    font-size: 0.62rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-intro {
+    font-size: clamp(1.2rem, 6vw, 1.6rem);
+  }
+
+  .about-line,
+  .about-body p {
+    font-size: clamp(0.82rem, 3.5vw, 0.88rem);
+  }
+
+  .about-accent,
+  .about-sign {
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
+  }
+
+  .skill-arc {
+    font-size: clamp(0.62rem, 2.8vw, 0.7rem);
+  }
+
+  .tag-lg {
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
+    padding: 0.4rem 0.9rem;
+  }
+
+  .tag-md {
+    font-size: clamp(0.78rem, 3.2vw, 1rem);
+  }
+
+  .tag-sm {
+    font-size: clamp(0.68rem, 2.8vw, 0.78rem);
+  }
+
+  .panel-title {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+
+  .project-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .project-desc {
+    font-size: clamp(0.78rem, 3.2vw, 0.85rem);
+  }
+}
